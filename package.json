@@ -4,13 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "jest",
+    "start": "node server.js",
+    "seeds": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bluebear1701/just-tech-news.git"
   },
-  "author": "",
+  "author": "Monica Solano",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Bluebear1701/just-tech-news/issues"
@@ -18,9 +20,13 @@
   "homepage": "https://github.com/Bluebear1701/just-tech-news#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "dotenv": "^16.0.0",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.19.0"
+    "sequelize": "^6.19.2"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
   }
 }
